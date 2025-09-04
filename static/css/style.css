@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+@tailwind utilities;
+@import "tailwindcss/preflight.css";
+@import 'tailwindcss';
+
+/* Custom colors */
+@layer utilities {
+  .bg-bfg {
+    background-color: rgb(35,35,35); /* your desired color */
+  }
+}
+.bfg-text-fancy {
+    font-family: 'Shrikhand';
+}
+
+.nav-top {
+    transition: all 500ms;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #232323;
+    background: linear-gradient(180deg,rgba(35, 35, 35, 1) 1%, rgba(35, 35, 35, 0) 100%);
+}
+.nav-not-top {
+    transition: all 500ms;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: #232323;
+    background: linear-gradient(180deg,rgba(35, 35, 35, 1) 1%, rgba(35, 35, 35, 0) 100%);
+}
+
+.nav-bg-inactive {
+    height: 84px;
+    width: 100vw;
+    transform: translateY(-84px);
+    opacity: 0;
+    transition: all 500ms;
+    background: #232323;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.nav-bg-active {
+    height: 84px;
+    width: 100vw;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all 500ms;
+    background: #232323;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk';
+}

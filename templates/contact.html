@@ -1,0 +1,49 @@
+{{ define "contact" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/htmx.org@2.0.1" integrity="sha384-QWGpdj554B4ETpJJC9z+ZHJcA/i59TyjxEPXiiUgN2WmTyV5OEZWCD6gQhgkdpB/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/output.css">
+    <title>Contact Us</title>
+</head>
+    <body class="bg-bfg overflow-x-hidden">
+        {{ template "nav" . }}
+        <main class="flex w-full flex-col justify-center items-center bg-bfg">
+            <section id="home-content" class="w-full bg-bfg">
+
+                <div class="fixed top-0 left-0 w-screen h-[33vh] flex justify-center overflow-hidden z-0">
+                    <img src="/static/img/backgrounds/contact.jpg" alt="Photo by Vishnu R Nair on Unsplash" class="h-full w-full object-cover object-center">
+                </div>
+
+                <div class="relative flex flex-col justify-center items-center pt-[75px] w-screen h-[33vh] overflow-hidden">
+                    <div class="w-full h-full bg-black/70 absolute top-0 left-0 z-2"></div>
+                    <div class="flex flex-col justify-center gap-4 w-4/5 max-w-[1100px] h-full">
+                        <h3 class="text-lg text-[#FF8C00] z-10">Ready?</h3>
+                        <h1 class="text-6xl font-black text-neutral-200 z-10 pb-2 w-max border-b-[2px] border-[#FF8C00]">Contact B.F.G.</span></h1>
+                    </div>
+                </div>
+
+                <div class="relative w-full bg-bfg flex justify-center items-center z-3">
+                    <div class="flex w-4/5 max-w-[1100px] border-b-1 border-neutral-600 z-2 justify-evenly items-center h-[33vh] min-h-[500px]">
+                        <div class="flex flex-col gap-6">
+                            <h3 class="text-neutral-200 text-3xl border-b-1 border-[#FF8C00] mb-4 font-bold w-auto w-max">Metro Atlanta</h3>
+                            <a href="tel:4703548082" class="text-neutral-200 transition hover:text-[#FF8C00] cursor-pointer w-max text-xl">(470) 354-8082</a>
+                            <a href="mailto:bfgproductionsatl@gmail.com" class="text-neutral-200 transition hover:text-[#FF8C00] cursor-pointer w-max text-xl">bfgproductionsatl@gmail.com</a>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <h3 class="text-neutral-200 text-3xl border-b-1 border-[#FF8C00] mb-4 font-bold w-max">Florida Panhandle</h3>
+                            <a href="tel:8509196125" class="text-neutral-200 transition hover:text-[#FF8C00] cursor-pointer w-max text-xl">(850) 919-6125</a>
+                            <a href="mailto:bfgproductionspcb@gmail.com" class="text-neutral-200 transition hover:text-[#FF8C00] cursor-pointer w-max text-xl">bfgproductionspcb@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+        {{ template "footer" . }}
+    </body>
+</html>
+{{ end }}
