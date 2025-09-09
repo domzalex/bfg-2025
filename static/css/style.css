@@ -31,9 +31,9 @@
 }
 
 .nav-bg-inactive {
-    height: 84px;
+    height: 100%;
     width: 100vw;
-    transform: translateY(-84px);
+    transform: translateY(-100%);
     opacity: 0;
     transition: all 500ms;
     background: #232323;
@@ -44,9 +44,9 @@
 }
 
 .nav-bg-active {
-    height: 84px;
+    height: 100%;
     width: 100vw;
-    transform: translateY(0px);
+    transform: translateY(0%);
     opacity: 1;
     transition: all 500ms;
     background: #232323;

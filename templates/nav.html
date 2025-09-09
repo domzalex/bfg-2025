@@ -1,66 +1,66 @@
 {{ define "nav" }}
-<nav id="nav-outer" class="nav-top w-screen flex justify-center items-center fixed z-11">
+<nav id="nav-outer" class="nav-top w-screen flex justify-center items-center fixed z-100">
     <div id="nav-bg" class="nav-bg-inactive z-1"></div>
-    <div id="nav-inner" class="max-w-[1100px] flex justify-between items-center z-11 w-4/5">
-        <a href="/"><img src="/static/img/logo-trans.webp" alt="bfg logo" class="w-[100px]"></a>
-        <div id="nav-links" class="flex w-3/5 items-center justify-between">
+    <div id="nav-inner" class="max-w-[1100px] flex justify-between items-center z-11 lg:w-4/5 w-full px-3">
+        <a href="/"><img src="/static/img/logo-trans.webp" alt="bfg logo" class="lg:w-[100px] w-[50px]"></a>
+        <div id="nav-links" class="flex lg:w-3/5 w-4/5 items-center justify-between">
             <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
             <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
             <el-dropdown class="inline-block">
-                <button class="inline-flex w-full justify-center items-center gap-x-1.5 text-neutral-200 text-xl font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
+                <button class="inline-flex w-full justify-center items-center lg:gap-x-1.5 gap-x-0 text-neutral-200 lg:text-xl text-xs font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
                     Live
-                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-neutral-400">
+                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 lg:size-5 size-3 text-neutral-400">
                         <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                     </svg>
                 </button>
                 <el-menu anchor="bottom end" popover class="w-max origin-top-right rounded-md bg-neutral-900 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <div>
-                        <a href="/services/dj-wedding-services" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">DJ / Wedding Services</a>
-                        <a href="/services/live-music" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Live Music</a>
-                        <a href="/services/team-trivia" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Team Trivia</a>
-                        <a href="/services/music-video-bingo" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Music Video Bingo</a>
-                        <a href="/services/karaoke" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Karaoke</a>
+                        <a href="/services/dj-wedding-services" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">DJ / Wedding Services</a>
+                        <a href="/services/live-music" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Live Music</a>
+                        <a href="/services/team-trivia" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Team Trivia</a>
+                        <a href="/services/music-video-bingo" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Music Video Bingo</a>
+                        <a href="/services/karaoke" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Karaoke</a>
                     </div>
                 </el-menu>
             </el-dropdown>
             <el-dropdown class="inline-block">
-                <button class="inline-flex gap-x-1.5 w-full justify-center items-center text-neutral-200 text-xl font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
+                <button class="inline-flex lg:gap-x-1.5 gap-x-0 w-full justify-center items-center text-neutral-200 lg:text-xl text-xs font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
                     Production
-                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-neutral-400">
+                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 lg:size-5 size-3 text-neutral-400">
                         <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                     </svg>
                 </button>
 
                 <el-menu anchor="bottom end" popover class="w-max origin-top-right rounded-md bg-neutral-900 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <div>
-                        <a href="/services/outdoor-movie-night" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Outdoor Movie Night</a>
-                        <a href="/services/live-event-production" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Live Event Production</a>
-                        <a href="/services/equipment-rental" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Equipment Rental</a>
-                        <a href="/services/event-consultation-services" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Event Consultation Services</a>
-                        <a href="/services/podcast-filming" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Podcast Filming</a>
-                        <a href="/services/audio-video-editing" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Audio & Video Editing</a>
-                        <a href="/services/screen-projector-rentals" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Screen & Projector Rentals</a>
+                        <a href="/services/outdoor-movie-night" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Outdoor Movie Night</a>
+                        <a href="/services/live-event-production" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Live Event Production</a>
+                        <a href="/services/equipment-rental" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Equipment Rental</a>
+                        <a href="/services/event-consultation-services" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Event Consultation Services</a>
+                        <a href="/services/podcast-filming" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Podcast Filming</a>
+                        <a href="/services/audio-video-editing" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Audio & Video Editing</a>
+                        <a href="/services/screen-projector-rentals" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Screen & Projector Rentals</a>
                     </div>
                 </el-menu>
             </el-dropdown>
             <el-dropdown class="inline-block">
-                <button class="inline-flex gap-x-1.5 w-full justify-center items-center text-neutral-200 text-xl font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
+                <button class="inline-flex lg:gap-x-1.5 gap-x-0 w-full justify-center items-center text-neutral-200 lg:text-xl text-xs font-bold transition hover:opacity-[0.75] hover:cursor-pointer">
                     Installation
-                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-neutral-400">
+                    <svg viewBox="0 0 20 20" fill="#FF8C00" data-slot="icon" aria-hidden="true" class="-mr-1 lg:size-5 size-3 text-neutral-400">
                         <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                     </svg>
                 </button>
 
                 <el-menu anchor="bottom end" popover class="w-max origin-top-right rounded-md bg-neutral-900 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                     <div>
-                        <a href="/services/stage-sound" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Stage & Sound</a>
-                        <a href="/services/lighting" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Lighting</a>
-                        <a href="/services/audio-visual" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Audio / Visual</a>
-                        <a href="/services/repairs" class="block px-4 py-2 text-lg text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Repairs</a>
+                        <a href="/services/stage-sound" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Stage & Sound</a>
+                        <a href="/services/lighting" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Lighting</a>
+                        <a href="/services/audio-visual" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Audio / Visual</a>
+                        <a href="/services/repairs" class="block px-4 py-2 lg:text-lg text-sm text-neutral-300 focus:bg-white/5 focus:text-neutral-200 focus:outline-hidden">Repairs</a>
                     </div>
                 </el-menu>
             </el-dropdown>
-            <a href="/contact" class="text-neutral-200 text-xl font-bold transition hover:opacity-[0.75] hover:cursor-pointer">Contact</a>
+            <a href="/contact" class="text-neutral-200 lg:text-xl text-xs font-bold transition hover:opacity-[0.75] hover:cursor-pointer">Contact</a>
             <!-- <a href="/testimonials" class="text-neutral-200 text-xl font-bold transition hover:opacity-[0.75] hover:cursor-pointer">Testimonials</a> -->
         </div>
     </div>
