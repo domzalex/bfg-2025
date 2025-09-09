@@ -11,6 +11,9 @@
     background-color: rgb(35,35,35); /* your desired color */
   }
 }
+.bg-fade {
+    background: linear-gradient(90deg, rgba(23, 23, 23, 0) 0%, rgba(23, 23, 23, 100) 75%);
+}
 .bfg-text-fancy {
     font-family: 'Shrikhand';
 }
